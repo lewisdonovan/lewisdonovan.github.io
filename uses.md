@@ -17,7 +17,7 @@ Below is a list of tools that I use in my day-to-day, to make the job of coding 
     * Icons
         * I use the *Seti icon set* which ships with VSCode.
     * Extensions
-        * [Emmet](https://code.visualstudio.com/) VSCode now ships with Emmet support built in, but it's worth mentioning as it's a *huge* timesaver!
+        * [Emmet](https://code.visualstudio.com/) (VSCode now ships with Emmet support built in, but it's worth mentioning as it's a *huge* timesaver!)
         * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
         * [Indent Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
         * [JavaScript (ES6) Code Snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)

@@ -16,11 +16,14 @@
 @import '../_sass/bootstrap';
 @import '../_sass/mixins';
 
+@import '//fonts.googleapis.com/css?family=Fira+Code:600|Montserrat:400,400i,700,700i&display=swap';
+@import '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
+
 $primary: #0a0a0a;
 $secondary: #FF7B7B;
 
-%opensans { font-family: 'Open Sans', sans-serif; }
-%merriweather { font-family: 'Merriweather', serif; }
+%opensans { font-family: 'Montserrat', sans-serif; }
+%firacode { font-family: 'Fira Code', monospace; }
 
 /*--------------------------------------------------------------
 	1.0 Defaults
@@ -39,8 +42,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @extend %merriweather;
+  @extend %firacode;
   font-weight: 700;
+  &:before {
+    content: '>_ ';
+  }
 }
 
 article {
@@ -255,6 +261,29 @@ button.btn, input.btn {
   }
 }
 
+.wow {
+  .portfolio-entry {
+    display: flex;
+    flex-direction: row;
+    .portfolio-content {
+      order: 1;
+    }
+    .portfolio-image {
+      order: 2;
+    }
+  }
+  &:nth-child(even) {
+    .portfolio-entry {
+      .portfolio-content {
+        order: 2;
+      }
+      .portfolio-image {
+        order: 1;
+      }
+    }
+  }
+}
+
 .content-wrap {
   margin-bottom: 8em;
   @include bp-xsmall {
@@ -288,12 +317,10 @@ button.btn, input.btn {
         width: 3em;
         height: 3px;
         background-color: #ECEFF1;
-      }
-    }
-    .excerpt {
-      width: 80%;
-      @include bp-xsmall {
-        width: 100%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
       }
     }
     button{
@@ -315,6 +342,68 @@ button.btn, input.btn {
     .categories span {
       color: #b9b1ad;
       background-color: #EFEBE9;
+    }
+  }
+  .portfolio-entry {
+    display: flex;
+    flex-direction: row;
+    .portfolio-content {
+      text-align: center;
+      @include bp-small {
+        margin-top: 0;
+        a {
+          button {
+            margin: 0 auto;
+          }
+        }
+      }
+      @include bp-xsmall {
+        margin-top: 0;
+        a {
+          button {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .portfolio-content, .portfolio-image {
+      width: 50%;
+    }
+    @include bp-small {
+      flex-direction: column;
+      .portfolio-image {
+        order: 1;
+        width: 100%;
+      }
+      .portfolio-content {
+        order: 2;
+        width: 100%;
+      }
+    }
+    @include bp-xsmall {
+      flex-direction: column;
+      .portfolio-image {
+        order: 1;
+        width: 100%;
+      }
+      .portfolio-content {
+        order: 2;
+        width: 100%;
+      }
+    }
+    &.is-site {
+      .portfolio-image {
+        img {
+          max-height: 25vw;
+          object-fit: cover;
+          @include bp-small {
+            max-height: 50vw;
+          }
+          @include bp-xsmall {
+            max-height: 50vw;
+          }
+        }
+      }
     }
   }
 }

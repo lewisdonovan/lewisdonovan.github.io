@@ -1,6 +1,5 @@
 ---
 layout: inner
-position: left
 title: 'ACF fields to WP REST API'
 date: 2020-04-02 16:36:00
 categories: development
