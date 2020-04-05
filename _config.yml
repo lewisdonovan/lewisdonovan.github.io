@@ -29,6 +29,8 @@ tiktok_username: ''
 twitter_username: ''
 section_title: 'Projects'
 
+timezone: 'Europe/London'
+
 # Build settings
 markdown: kramdown
 # theme: phantom # Uncomment once published to RubyGems
