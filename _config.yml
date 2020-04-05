@@ -20,7 +20,7 @@ description: "I'm a software engineer from London, creating awesome things for t
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lewisdonovan.dev/" # the base hostname & protocol for your site, e.g. https://example.com
 github_username: 'lewisdonovan'
-medium_url: 'medium.com/@lewisdonovan'
+medium_username: ''
 instagram_username: 'lewisjdonovan'
 youtube_channel: 'UCsiQKOxxZKnk9pDFG7xDbGg'
 facebook_username: 'Lewis-Donovan-224541758042273'
@@ -107,5 +107,6 @@ enable_contact: true
 enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
+  - { url: '/work', text: 'Work' }
   - { url: '/about', text: 'About' }
   - { url: '/uses', text: 'Uses' }

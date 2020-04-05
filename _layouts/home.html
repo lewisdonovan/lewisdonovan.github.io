@@ -8,7 +8,7 @@
           <div class="col-md-12">
 
             {% if site.section_title != '' %}
-            <h2 class="section-title text-center">{{ site.section_title }}</h2>
+            <h2 class="section-title text-center">Latest {{ site.section_title }}</h2>
             {% endif %}
             {% if site.section_subtitle != '' %}
             <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
@@ -16,13 +16,19 @@
 
             <div class="break"></div>
 
-            {% for post in paginator.posts %}
+            {% for post in site.posts limit:3 %}
               <div class="wow fadeIn">
                 {% include content.html %}
               </div>
             {% endfor %}
 
-            {% include pagination.html %}
+            <p class="text-center">
+              <a href="/work">
+                <button class="btn btn-lg">
+                  <i class="fa fa-arrow-circle-right fa-lg"></i>See all projects
+                </button>
+              </a>
+            </p>
 
           </div>
         </div>
