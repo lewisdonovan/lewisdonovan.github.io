@@ -12,6 +12,12 @@
           <h1 class="text-center">{{site.hometitle}}</h1>
           {% endif %}
 
+          {% if site.headshot != '' %}
+          <p class="text-center">
+            <img src="{{site.headshot}}" class="headshot" alt="Photo of {{site.title}}" />
+          </p>
+          {% endif %}
+
           {% if site.description != '' or site.enable_contact == true %}
           <p class="text-center">
             {% if site.description != '' %}

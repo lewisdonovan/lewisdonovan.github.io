@@ -77,6 +77,24 @@ button.btn, input.btn {
   border-radius: 4px;
   color: #2E4453;
   font-weight: 600;
+  &.btn-block {
+    width: calc(100% - 1em);
+  }
+  &.btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    &:active {
+      color: #fff;
+      background-color: #1d2124;
+      border-color: #171a1d;
+    }
+    &:hover {
+      color: #fff;
+      background-color: #23272b;
+      border-color: #1d2124;
+    }
+  }
   &:hover, &.btn-default:hover {
     background-color: white;
     border: solid 1px #b0c5d2;
@@ -144,6 +162,16 @@ button.btn, input.btn {
   }
   p {
     margin: 2em 0 4em 0;
+  }
+  img {
+    &.headshot {
+      width: 80vw;
+      max-width: 500px;
+      height: 80vw;
+      max-height: 500px;
+      border-radius: 50%;
+      object-fit: cover;;
+    }
   }
   .hero-buttons {
     margin: 0 auto;
