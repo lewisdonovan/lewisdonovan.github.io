@@ -2,7 +2,7 @@
 layout: inner
 title: 'Google News Scraper'
 date: 2020-04-01 16:36:00
-categories: development
+categories: [work,repo,development,github]
 tags: Node JS API AWS web-scraper Google News cheerio
 featured_image: '/img/posts/google-news-scraper.jpg'
 project_link: 'https://github.com/lewisdonovan/google-news-scraper'

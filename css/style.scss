@@ -359,6 +359,13 @@ button.btn, input.btn {
     }
     .tags, .categories {
       margin: 2em 0;
+      &.source {
+        background: #2e4453;
+        color: #fff;
+        i {
+          margin-right: 10.5em;
+        }
+      }
       span {
         color: #9eb1bd;
         background-color: #ECEFF1;
