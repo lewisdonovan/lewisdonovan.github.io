@@ -340,7 +340,7 @@ button.btn, input.btn {
       &:after {
         content: '';
         position: absolute;
-        top: 1.5em;
+        top: calc(100% + 0.5em);
         left: 0;
         width: 3em;
         height: 3px;
