@@ -8,5 +8,6 @@ featured_image: '/img/posts/hackathon.jpg'
 project_link: 'https://musically.com/2020/02/27/sony-music-and-the-orchard-held-a-machine-learning-hackathon/'
 button_icon: 'external-link'
 button_text: 'Read full article'
+source: 'Music Ally'
 lead_text: 'A write-up from Music Ally about MusicML, second annual hackathon created in collaboration with Sony Music, The Orchard and AWS.'
 ---
