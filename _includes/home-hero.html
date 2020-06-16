@@ -38,6 +38,9 @@
             {% if site.github_username != '' %}
               <a href="https://github.com/{{ site.github_username }}"><button class="btn btn-default"><i class="fa fa-github fa-lg"></i>Github</button></a>
             {% endif %}
+            {% if site.stackoverflow_url != '' %}
+              <a href="{{ site.stackoverflow_url }}"><button class="btn btn-default"><i class="fa fa-stack-overflow fa-lg"></i>Stack Overflow</button></a>
+            {% endif %}
             {% if site.linkedin_username != '' %}
               <a href="https://linkedin.com/in/{{ site.linkedin_username }}"><button class="btn btn-default"><i class="fa fa-linkedin fa-lg"></i>LinkedIn</button></a>
             {% endif %}
