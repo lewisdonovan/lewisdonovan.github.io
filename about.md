@@ -18,6 +18,6 @@ I am available for public speaking, mentoring, education and freelance technolog
 
 ## Work
 
-For my day-job, I'm the Lead Web Developer at [4th Floor Creative Group](https://instagram.com/4thfloorcreativegroup), the in-house creative arm of [Sony Music UK](https://sonymusic.co.uk).
+For my day-job, I'm the Lead Web Developer at [4th Floor Creative Group](https://4thfloorcreative.co.uk), the in-house creative arm of [Sony Music UK](https://sonymusic.co.uk).
 
-I also [make coding tutorials](https://youtube.com/channel/UCsiQKOxxZKnk9pDFG7xDbGg) and [give advice to young and junior developers](https://linkedin.com/in/lewisdonovan) to help them advance their careers.
+In my free time I enjoy the great outdoors, cooking, travelling keeping fit and playing football. Feel free to [follow me on Instagram](https://instagram.com/lewisjdonovan) for all of that good stuff!
