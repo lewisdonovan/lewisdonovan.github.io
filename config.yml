@@ -5,6 +5,7 @@ params:
   google_analytics: "UA-125581166-3"
   description: Webby Award nominated software engineer from London, creating awesome things for the web!
   color_scheme: dark
+  favicon: "images/favicon.png"
   accent_color: green
   header:
     title: ">_ Lewis Donovan"
