@@ -7,7 +7,8 @@
     "build": "unibit build",
     "develop": "unibit develop",
     "start": "unibit develop",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy-content": "unibit build && git subtree push --prefix public origin gh-pages"
   },
   "author": "Lewis Donovan",
   "license": "ISC",
