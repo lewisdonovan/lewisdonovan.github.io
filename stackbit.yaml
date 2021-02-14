@@ -9,7 +9,7 @@ pagesDir: content
 pageLayoutKey: layout
 metadata:
   title: Lewis Donovan
-  description: Personal portfolio site
+  description: Webby Award nominated software engineer from London, creating awesome things for the web!
 pageData:
   - pagePath: "/"
     initialExpandedPaths:

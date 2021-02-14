@@ -11,6 +11,8 @@ sections:
       - label: More about me
         url: /about
         style: button
+  - section_id: shareimg
+    type: section_shareimg
   - section_id: latest-projects
     type: section_portfolio
     layout_style: mosaic
