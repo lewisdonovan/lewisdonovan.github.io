@@ -2,6 +2,7 @@ baseurl: "/"
 title: "Lewis Donovan"
 page_load_js: "assets/js/main.js"
 params:
+  baseurl: "https://lewisdonovan.dev/"
   google_analytics: "UA-125581166-3"
   description: Webby Award nominated software engineer from London, creating awesome things for the web!
   color_scheme: dark

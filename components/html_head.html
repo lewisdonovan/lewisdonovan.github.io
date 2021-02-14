@@ -8,3 +8,23 @@
 {% if site.params.favicon %}
 <link rel="icon" href="{{ site.params.favicon | relative_url }}">
 {% endif %}
+
+{% if page.og_image %}
+<meta property="og:image" content="{{ site.params.baseurl }}{{ page.og_image }}" />
+{% endif %}
+
+{% if page.og_type %}
+<meta property="og:type" content="{{ page.og_type }}" />
+{% else %}
+<meta property="og:type" content="website" />
+{% endif %}
+
+{% if page.og_title %}
+<meta property="og:title" content="{{ page.og_title }}" />
+{% endif %}
+
+{% if page.og_description %}
+<meta property="og:description" content="{{ page.og_description }}" />
+{% elif page.subtitle %}
+<meta property="og:description" content="{{ page.subtitle }}" />
+{% endif %}

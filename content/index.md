@@ -1,6 +1,7 @@
 ---
 title: Home
 hide_title: true
+og_image: images/og-image.jpg
 sections:
   - section_id: hero
     type: section_hero
