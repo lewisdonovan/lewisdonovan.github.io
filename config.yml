@@ -1,0 +1,70 @@
+baseurl: "/"
+title: "Lewis Donovan"
+page_load_js: "assets/js/main.js"
+params:
+  google_analytics: "UA-125581166-3"
+  description: Webby Award nominated software engineer from London, creating awesome things for the web!
+  color_scheme: dark
+  accent_color: green
+  header:
+    title: ">_ Lewis Donovan"
+    has_nav: true
+    nav_links:
+      - label: Home
+        url: /
+        style: link
+      - label: Projects
+        url: /projects/
+        style: link
+      - label: Press
+        url: /press/
+        style: link
+      - label: About
+        url: /about/
+        style: link
+      - label: Uses
+        url: /uses/
+        style: link
+      - label: Blog
+        url: https://lewisdonovan.medium.com/
+        style: link
+        new_window: true
+      - label: Contact
+        url: /about/#get-in-touch
+        style: link
+  footer:
+    content: >-
+      &copy; <span id="footerDate"></span> Lewis Donovan
+    has_social: true
+    social_links:
+      - label: GitHub
+        url: https://github.com/lewisdonovan/
+        style: icon
+        icon_class: fa-github
+        new_window: true
+      - label: Medium
+        url: https://lewisdonovan.medium.com/
+        style: icon
+        icon_class: fa-medium
+        new_window: true
+      - label: LinkedIn
+        url: https://linkedin.com/in/lewisdonovan
+        style: icon
+        icon_class: fa-linkedin
+        new_window: true
+      - label: Stack Overflow
+        url: https://stackoverflow.com/users/7546845/lewis-donovan
+        style: icon
+        icon_class: fa-stack-overflow
+        new_window: true
+      - label: Instagram
+        url: https://instagram.com/lewisjdonovan
+        style: icon
+        icon_class: fa-instagram
+        new_window: true
+sass:
+  input_file: sass/main.scss.njk
+  output_file: assets/css/main.css
+  indentWidth: 4
+  outputStyle: compressed
+  precision: 10

@@ -1,0 +1,17 @@
+{% extends "body.html" %}
+
+{% block content %}
+
+{% if not page.params.hide_title %}
+<header class="page-header inner-sm outer">
+  <h1 class="page-title line-top">{{ page.params.title }}</h1>
+</header><!-- .page-header -->
+{% endif %}
+
+{% for section in page.params.sections %}
+  {% set include_dict = {'section': section, 'site': site} %}
+  {% set component = section.type | component_file %}
+  {% include component %}
+{% endfor %}
+
+{% endblock %}

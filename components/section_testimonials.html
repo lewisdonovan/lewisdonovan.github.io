@@ -1,0 +1,34 @@
+{% set section = include_dict.section %}
+<section id="{{ section.section_id }}" class="block block-testimonials outer">
+  <div class="inner">
+    {% if section.title or section.subtitle %}
+    <div class="block-header inner-sm">
+      {% if section.title %}
+      <h2 class="block-title line-top">{{ section.title }}</h2>
+      {% endif %}
+      {% if section.subtitle %}
+      <p class="block-subtitle">{{ section.subtitle | safe }}</p>
+      {% endif %}
+    </div>
+    {% endif %}
+    {% if section.testimonials %}
+    <div class="block-content">
+      <div {{ classNames('grid', {'grid-col-2': section.col_number == 'two', 'grid-col-3': section.col_number == 'three'}) }}>
+        {% for testimonial in section.testimonials %}
+        <div class="grid-item">
+          <blockquote class="testimonial">
+            <p class="testimonial-content">{{ testimonial.content | safe }}</p>
+            <footer class="testimonial-footer">
+              {% if testimonial.avatar %}
+              <img class="testimonial-avatar" src="{{ testimonial.avatar | relative_url }}" alt="{{ testimonial.avatar_alt }}">
+              {% endif %}
+              <cite class="testimonial-author">{{ testimonial.author }}</cite>
+            </footer>
+          </blockquote>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div><!-- .inner -->
+</section><!-- .block -->

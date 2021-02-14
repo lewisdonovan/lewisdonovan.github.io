@@ -1,0 +1,33 @@
+<header id="masthead" class="site-header outer">
+  <div class="inner">
+    <div class="site-header-inside">
+      <div class="site-branding">
+        {% if site.params.header.logo_img %}
+        <p class="site-logo">
+          <a href="{{ '/' | relative_url }}"><img src="{{ site.params.header.logo_img | relative_url }}" alt="{{ site.params.header.logo_img_alt }}" /></a>
+        </p>
+        {% else %}
+        <p class="site-title"><a href='{{ "/" | relative_url }}'>{{ site.params.header.title }}</a></p>
+        {% endif %}
+      </div><!-- .site-branding -->
+      {% if site.params.header.has_nav %}
+      <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+      <nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+        <div class="site-nav-inside">
+          <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span></button>
+          <ul class="menu">
+            {% for action in site.params.header.nav_links %}
+              {% set pageUrl = page.url | trim('/') %}
+              {% set actionUrl = action.url | trim('/') %}
+              <li {{ classNames('menu-item', {'current-menu-item': pageUrl == actionUrl, 'menu-button': action.style != 'link'}) }}>
+                {% set include_dict = {'action': action} %}
+                {% include "action_link.html" %}
+              </li>
+            {% endfor %}
+          </ul><!-- .menu -->
+        </div><!-- .site-nav-inside -->
+      </nav><!-- .site-navigation -->
+      {% endif %}
+    </div><!-- .site-header-inside -->
+  </div><!-- .inner -->
+</header><!-- .site-header -->

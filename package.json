@@ -1,0 +1,22 @@
+{
+  "name": "lewisdonovan.dev",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "main": "public/index.html",
+  "scripts": {
+    "build": "unibit build",
+    "develop": "unibit develop",
+    "start": "unibit develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lewis Donovan",
+  "license": "ISC",
+  "homepage": "https://lewisdonovan.dev",
+  "dependencies": {
+    "@stackbit/unibit": "~0.1.11",
+    "kind-of": "^6.0.3",
+    "lodash": "^4.17.19",
+    "minimist": "^1.2.5",
+    "nodemon": "^1.19.1"
+  }
+}

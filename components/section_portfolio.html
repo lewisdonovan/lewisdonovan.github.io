@@ -1,0 +1,57 @@
+{% set section = include_dict.section %}
+<section id="{{ section.section_id }}" class="block-portfolio block outer">
+  <div class="inner">
+    {% if section.title or section.subtitle %}
+    <div class="block-header inner-sm">
+      {% if section.title %}
+      <h2 class="block-title line-top">{{ section.title }}</h2>
+      {% endif %}
+      {% if section.subtitle %}
+      <p class="block-subtitle">{{ section.subtitle | safe }}</p>
+      {% endif %}
+    </div>
+    {% endif %}
+    <div class="block-content">
+      <div class="portfolio-feed layout-{{ section.layout_style }}">
+        {% set display_projects = getPages("/projects") | where("featured", true) | sort(true, true, "date") %}
+        {% set recent_projects = display_projects | slice_array(0, section.projects_number) %}
+        {% for post in recent_projects %}
+        <article class="project">
+          {% if loop.last and section.view_all_label and section.view_all_url %}
+          <a href="{{ section.view_all_url | relative_url }}" class="project-link view-all-link">
+            {% if post.params.thumb_image %}
+            <div class="project-thumbnail">
+              <img src="{{ post.params.thumb_image | relative_url }}" alt="{{ post.params.thumb_image_alt }}" />
+            </div>
+            {% endif %}
+            <span class="view-all-button">{{ section.view_all_label }}</span>
+          </a>
+          {% else %}
+          <a href="{{ post.url | relative_url }}" class="project-link">
+            {% if post.params.thumb_image %}
+            <div class="project-thumbnail">
+              <img src="{{ post.params.thumb_image | relative_url }}" alt="{{ post.params.thumb_image_alt }}" />
+            </div>
+            {% endif %}
+            <header class="project-header">
+              <h3 class="project-title">{{ post.params.title }}</h3>
+            </header>
+          </a>
+          {% endif %}
+          {% if post.params.badge %}
+          <div class="badge {{ post.params.badge_position }}">
+            {% if post.params.badge_link %}
+            <a href="{{ post.params.badge_link }}" target="_blank" rel="noopener">
+            {% endif %}
+              <img src="{{ post.params.badge | relative_url }}" alt="">
+            {% if post.params.badge_link %}
+            </a>
+            {% endif %}
+          </div>
+          {% endif %}
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div><!-- .inner -->
+</section><!-- .block -->

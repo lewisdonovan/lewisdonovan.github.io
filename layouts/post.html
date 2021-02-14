@@ -1,0 +1,62 @@
+{% extends "body.html" %}
+
+{% block content %}
+
+<div class="inner outer">
+
+  <article class="post post-full">
+    <header class="post-header inner-sm">
+      <h1 class="post-title line-top">{{ page.params.title }}</h1>
+      {% if page.params.subtitle %}
+      <div class="post-subtitle">
+        {{ page.params.subtitle | safe }}
+      </div>
+      {% endif %}
+    </header>
+    {% if page.params.image %}
+    <div class="post-image">
+      <img src="{{ page.params.image | relative_url }}" alt="{{ page.params.image_alt }}" />
+    </div>
+    {% endif %}
+    <div class="post-content inner-sm">
+      {{ page.content }}
+    </div>
+    <footer class="post-meta inner-sm">
+      <time class="published" datetime="{{page.date | date_format("%Y-%m-%d %H:%M") }}">{{ page.date | date_format("%B %d, %Y") }}</time>
+    </footer>
+  </article><!-- .post -->
+
+  <!-- Next/previous post navigation TBD -->
+  <!--
+  <nav class="read-next inner-sm">
+    <h2 class="read-next-title line-top">Read Next</h2>
+    <div class="post-feed grid grid-col-2">
+      <article class="post grid-item">
+        <div class="post-inside">
+          <a class="post-thumbnail" href="#"><img src="#" alt="" /></a>
+          <header class="post-header">
+            <h3 class="post-title"><a href="#" rel="bookmark">Previous Post Title</a></h3>
+            <div class="post-meta">
+              <time class="published" datetime="">Previous post date</time>
+            </div>
+          </header>
+        </div>
+      </article>
+      <article class="post grid-item">
+        <div class="post-inside">
+          <a class="post-thumbnail" href="#"><img src="#" alt="" /></a>
+          <header class="post-header">
+            <h3 class="post-title"><a href="#" rel="bookmark">Next Post Title</a></h3>
+            <div class="post-meta">
+              <time class="published" datetime="">Next post date</time>
+            </div>
+          </header>
+        </div>
+      </article>
+    </div>
+  </nav>
+  -->
+
+</div><!-- .inner -->
+
+{% endblock %}

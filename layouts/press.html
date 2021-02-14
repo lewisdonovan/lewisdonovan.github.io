@@ -1,0 +1,45 @@
+{% extends "body.html" %}
+
+{% block content %}
+
+<div class="inner outer">
+
+  <header class="page-header inner-sm">
+    <h1 class="page-title line-top">{{ page.params.title }}</h1>
+    {% if page.params.subtitle %}
+    <p class="page-subtitle">{{ page.params.subtitle }}</p>
+    {% endif %}
+  </header><!--.page-header -->
+
+  <div class="portfolio-feed layout-{{ page.params.layout_style }}">
+    {% set display_press = getPages("/press") | sort(true, true, "date") %}
+    {% for post in display_press %}
+    <article class="project">
+      <a href="{{ post.params.link }}" class="project-link" target="_blank" rel="noopener">
+        {% if post.params.thumb_image %}
+        <div class="project-thumbnail">
+          <img src="{{ post.params.thumb_image | relative_url }}" alt="{{ post.params.thumb_image_alt }}" />
+        </div>
+        {% endif %}
+        <header class="project-header">
+          <h2 class="project-title">{{ post.params.title }}</h2>
+        </header>
+      </a>
+    </article><!-- .project -->
+    {% endfor %}
+  </div><!-- .portfolio-feed -->
+
+  <!-- Pagination TBD -->
+  <!--
+  <nav class="pagination inner-sm">
+    <div class="nav-links">
+      <a class="newer-posts button" href="#"><span class="icon-angle-left" aria-hidden="true"></span><span class="screen-reader-text">Prev</span></a>
+      <span class="page-number">Showing page X of Y</span>
+      <a class="older-posts button" href="#"><span class="screen-reader-text">Next</span><span class="icon-angle-right" aria-hidden="true"></span></a>
+    </div>
+  </nav>
+  -->
+
+</div><!-- .inner -->
+
+{% endblock %}

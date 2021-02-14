@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+    <head>    
+        
+        
+        <title>Little Mix BRIT Awards GIF Generator - Lewis Donovan</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google" content="notranslate" />
+<meta name="description" content="Webby Award nominated software engineer from London, creating awesome things for the web!"/>
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,700,700i&family=Fira+Code:wght@400&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="/assets/css/main.css">
+
+
+        <script type="text/javascript" src=/assets/js/live-reload.js></script>
+    </head>
+    <body>
+        
+        
+<div id="page" class="site palette-dark accent-green">
+  <header id="masthead" class="site-header outer">
+  <div class="inner">
+    <div class="site-header-inside">
+      <div class="site-branding">
+        
+        <p class="site-title"><a href='/'>&gt;_ Lewis Donovan</a></p>
+        
+      </div><!-- .site-branding -->
+      
+      <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+      <nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+        <div class="site-nav-inside">
+          <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span></button>
+          <ul class="menu">
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="/"
+  
+  
+  >
+  
+  Home
+  
+</a>
+              </li>
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="/projects/"
+  
+  
+  >
+  
+  Projects
+  
+</a>
+              </li>
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="/press/"
+  
+  
+  >
+  
+  Press
+  
+</a>
+              </li>
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="/about/"
+  
+  
+  >
+  
+  About
+  
+</a>
+              </li>
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="/uses/"
+  
+  
+  >
+  
+  Uses
+  
+</a>
+              </li>
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="https://lewisdonovan.medium.com/"
+   target="_blank"
+   rel="noopener "
+  >
+  
+  Blog
+  
+</a>
+              </li>
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="/about/#get-in-touch"
+  
+  
+  >
+  
+  Contact
+  
+</a>
+              </li>
+            
+          </ul><!-- .menu -->
+        </div><!-- .site-nav-inside -->
+      </nav><!-- .site-navigation -->
+      
+    </div><!-- .site-header-inside -->
+  </div><!-- .inner -->
+</header><!-- .site-header -->
+
+  <main id="content" class="site-content">
+    
+
+<div class="inner outer">
+
+  <article class="post post-full">
+    <header class="post-header inner-sm">
+      <h1 class="post-title line-top">Little Mix BRIT Awards GIF Generator</h1>
+      
+      <div class="post-subtitle">
+        Browser-based GIF generator for Little Mix's BRITs campaign.
+      </div>
+      
+      
+    </header>
+    
+    <div class="post-image">
+      <img src="/images/projects/lm-woman-like-me.jpg" alt="Little Mix Woman Like Me" />
+    </div><!-- .post-image -->
+    
+    <div class="post-content inner-sm">
+      <h3 id="brief">Brief</h3>
+<p>In 2019, <a href="https://little-mix.com">Little Mix</a> were nominated for Best Video at the 2019 <a href="https://www.brits.co.uk">BRIT Awards</a> for <a href="https://www.youtube.com/watch?v=fSOpiZo1BAA">&#39;Woman Like Me&#39;</a> featuring <strong>Nicki Minaj</strong>, with the winner to be decided by a public vote on Twitter. Any Tweet containing the hashtag <a href="https://twitter.com/search?q=%23BRITVIDLITTLEMIX">#BRITVIDLITTLEMIX</a> would be counted as a qualifying vote (limited to one vote per user in any 24 hour period).  </p>
+<p>The band&#39;s label, <a href="https://www.rca-records.co.uk/">RCA Records UK</a>, consulted with the team at <a href="https://4thfloorcreative.co.uk/">4th Floor Creative</a> to brainstorm and deliver a browser mechanic that would encourage fans to vote. Rather than simply encouraging them to Tweet on their own, the band and label were keen for there to be an interactive element involving the video, which would deliver some value to the fan. Increasing the number of views on the official video on YouTube was desirable but not essential.</p>
+<h3 id="solution">Solution</h3>
+<p>We decided to build a GIF generator that allowed fans to create a GIF from their favourite section of the video, and share it on Twitter with the voting hashtag. Fans would interact with an embed of the official video (via the <a href="https://developers.google.com/youtube/iframe_api_reference">YouTube Player API</a>) via custom scrub bar that allowed the user to select their desired starting point, and a dropdown menu to select their desired GIF duration. </p>
+<p>Once the user was happy with their selected GIF, they would click the call-to-action button and be taken to a pre-loaded Tweet (either in the app on mobile, or in browser on other devices). The Tweet contained a link to their created GIF, and some text promoting the mechanic (including the all-important voting hashtag). </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/51_ZHOdD3ZQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>We realised early-on that the compute cost of generating the GIFs on-the-fly could be astronomical because of the band&#39;s large fanbase. Instead we wrote a script that calculated all possible permutations ahead of time, and rendered the GIFs using FFmpeg. These pre-made GIFs were stored with an indexed naming convention that allowed us to identify the correct GIF based on a user&#39;s input decision.</p>
+<p>The links contained in the pre-loaded Tweets pointed to a page that reads the referrer header and, if it&#39;s Twitter, renders the relevant Open Graph tags to display the GIF in the Twitter timeline. All other referrers would result in a redirect to the site&#39;s homepage.</p>
+<h3 id="results">Results</h3>
+<ul>
+<li><strong>Helped the band win a BRIT Award</strong></li>
+<li><strong>Generated 18k votes</strong></li>
+<li><strong>Responsible for 409% increase in website traffic</strong></li>
+</ul>
+<p><strong>NB:</strong> Unfortunately this experience is no longer available online</p>
+
+    </div>
+  </article><!-- .post -->
+
+  <div class="press-articles">
+    
+
+    
+
+      
+
+    
+
+  </div>
+
+</div><!-- .inner -->
+
+
+  </main><!-- .site-content -->
+  <footer id="colophon" class="site-footer outer">
+  <div class="inner">
+    <div class="site-footer-inside">
+      <div class="site-info">
+        
+        <span class="copyright">&copy; <span id="footerDate"></span> Lewis Donovan</span>
+        
+        
+      </div><!-- .site-info -->
+      
+      <div class="social-links">
+        
+          
+          
+<a href="https://github.com/lewisdonovan/"
+   target="_blank"
+   rel="noopener "
+  class="button-icon">
+  
+  <span class="icon fab fa-github" aria-hidden="true"></span><span class="screen-reader-text">GitHub</span>
+  
+</a>
+        
+          
+          
+<a href="https://lewisdonovan.medium.com/"
+   target="_blank"
+   rel="noopener "
+  class="button-icon">
+  
+  <span class="icon fab fa-medium" aria-hidden="true"></span><span class="screen-reader-text">Medium</span>
+  
+</a>
+        
+          
+          
+<a href="https://linkedin.com/in/lewisdonovan"
+   target="_blank"
+   rel="noopener "
+  class="button-icon">
+  
+  <span class="icon fab fa-linkedin" aria-hidden="true"></span><span class="screen-reader-text">LinkedIn</span>
+  
+</a>
+        
+          
+          
+<a href="https://stackoverflow.com/users/7546845/lewis-donovan"
+   target="_blank"
+   rel="noopener "
+  class="button-icon">
+  
+  <span class="icon fab fa-stack-overflow" aria-hidden="true"></span><span class="screen-reader-text">Stack Overflow</span>
+  
+</a>
+        
+          
+          
+<a href="https://instagram.com/lewisjdonovan"
+   target="_blank"
+   rel="noopener "
+  class="button-icon">
+  
+  <span class="icon fab fa-instagram" aria-hidden="true"></span><span class="screen-reader-text">Instagram</span>
+  
+</a>
+        
+      </div><!-- .social-links -->
+      
+    </div><!-- .site-footer-inside -->
+  </div><!-- .inner -->
+</footer><!-- .site-footer -->
+</div><!-- .site -->
+
+        <!-- Scripts -->
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/main.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', ' UA-125581166-3', 'auto');
+    ga('send', 'pageview');
+</script>
+    </body> 
+</html>
