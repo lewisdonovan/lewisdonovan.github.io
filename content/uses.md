@@ -33,4 +33,4 @@ As a developer, I use *[Google Chrome](https://chrome.google.com)*. It can be a 
 
 ## Terminal
 
-I use *[iTerm2](https://www.iterm2.com/)* with *zsh* and *oh-my-zsh* installed. I highly recommend this setup, and there's a fantastic tutorial [here](https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c) that will guide you through it.
+I use *[iTerm2](https://www.iterm2.com/)* with *zsh* and *oh-my-zsh* installed. I highly recommend this setup, and there's a fantastic tutorial [here](https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c) that will guide you through it. 
