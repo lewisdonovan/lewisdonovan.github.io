@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+    <head>    
+        
+        
+        <title>Sundara Karma interactive live stream - Lewis Donovan</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google" content="notranslate" />
+<meta name="description" content="Webby Award nominated software engineer from London, creating awesome things for the web!"/>
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,700,700i&family=Fira+Code:wght@400&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="/assets/css/main.css">
+
+
+        <script type="text/javascript" src=/assets/js/live-reload.js></script>
+    </head>
+    <body>
+        
+        
+<div id="page" class="site palette-dark accent-green">
+  <header id="masthead" class="site-header outer">
+  <div class="inner">
+    <div class="site-header-inside">
+      <div class="site-branding">
+        
+        <p class="site-title"><a href='/'>&gt;_ Lewis Donovan</a></p>
+        
+      </div><!-- .site-branding -->
+      
+      <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+      <nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+        <div class="site-nav-inside">
+          <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span></button>
+          <ul class="menu">
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="/"
+  
+  
+  >
+  
+  Home
+  
+</a>
+              </li>
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="/projects/"
+  
+  
+  >
+  
+  Projects
+  
+</a>
+              </li>
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="/press/"
+  
+  
+  >
+  
+  Press
+  
+</a>
+              </li>
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="/about/"
+  
+  
+  >
+  
+  About
+  
+</a>
+              </li>
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="/uses/"
+  
+  
+  >
+  
+  Uses
+  
+</a>
+              </li>
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="https://lewisdonovan.medium.com/"
+   target="_blank"
+   rel="noopener "
+  >
+  
+  Blog
+  
+</a>
+              </li>
+            
+              
+              
+              <li class="menu-item">
+                
+                
+<a href="/about/#get-in-touch"
+  
+  
+  >
+  
+  Contact
+  
+</a>
+              </li>
+            
+          </ul><!-- .menu -->
+        </div><!-- .site-nav-inside -->
+      </nav><!-- .site-navigation -->
+      
+    </div><!-- .site-header-inside -->
+  </div><!-- .inner -->
+</header><!-- .site-header -->
+
+  <main id="content" class="site-content">
+    
+
+<div class="inner outer">
+
+  <article class="post post-full">
+    <header class="post-header inner-sm">
+      <h1 class="post-title line-top">Sundara Karma interactive live stream</h1>
+      
+      <div class="post-subtitle">
+        The world's first interactive live-streamed concert
+      </div>
+      
+      
+    </header>
+    
+    <div class="post-image">
+      <img src="/images/projects/sundara-livestream.jpg" alt="Sundara Karma interactive live stream concert at Albert Hall Manchester for Dot To Dot Festival 2017. Take control of the show." />
+    </div><!-- .post-image -->
+    
+    <div class="post-content inner-sm">
+      <h3 id="world-first">WORLD FIRST!</h3>
+<p><strong><em>This project was the world&#39;s first interactive live streamed concert.</em></strong></p>
+<h3 id="brief">Brief</h3>
+<p>In 2017, our team was approached by <a href="https://www.rca-records.co.uk/">RCA Records UK</a> and Sony Music&#39;s in-house video production team, and asked if it would be possible to create an interface for an interactive live stream. <a href="https://sundarakarma.com/">Sundara Karma</a> were booked to headline <a href="https://www.dottodotfestival.co.uk/">Dot To Dot Festival</a>, and their set was due to be live-streamed on the Facebook page of digital content publisher, <a href="">The Hook</a>.  </p>
+<p>During the transmission of the concert, they wanted viewers to be presented with several multiple-choice questions as an overlay in the bottom-third of the screen, and to have some mechanism by which they could submit their vote. The questions would pertain to actions the band would carry out during the show.  </p>
+<p>The desired outcomes were increased social engagement and viewer numbers on the live stream, as well as creating something new.</p>
+<h3 id="solution">Solution</h3>
+<p>After some testing, we realised that it would be possible to use Facebook&#39;s built-in reaction emojis (like, wow, haha etc.) as a way for viewers to respond to the questions being displayed on screen.  </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/10T1Ef--kFE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>Facebook reactions were only about a year old at the time, so they still had significant influence on virality in Facebook&#39;s news feed algorithm. Put simply, when a user reacted to a public post, it would be displayed in the news feeds of a subset of that user&#39;s friends. Each time they reacted to the post, it would be upweighted in those feeds. In these circumstances, encouraging users to react multiple times to a single post could exponentially increase its virality in a short space of time.  </p>
+<p>We created a webpage that displayed the questions, answers and corresponding reactions over a transparent background. Each time the website was clicked it would alternately show the next set of questions/answers/reactions, or a blank page. The video director added this page as a layer in OBS, over the top of the live video feed, and this was sent out on the live feed. The webpage also used the post ID of the live stream to pull reaction stats in real-time from the Facebook API, so these could also be shown on screen to viewers.  </p>
+<h3 id="results">Results</h3>
+<ul>
+<li><strong>Over 100k streams</strong></li>
+<li><strong>15k unique interactions</strong></li>
+<li><strong>Over 1,000 hours of combined viewing time</strong></li>
+</ul>
+
+    </div>
+  </article><!-- .post -->
+
+  <div class="press-articles">
+    
+
+    
+
+      
+
+    
+
+  </div>
+
+</div><!-- .inner -->
+
+
+  </main><!-- .site-content -->
+  <footer id="colophon" class="site-footer outer">
+  <div class="inner">
+    <div class="site-footer-inside">
+      <div class="site-info">
+        
+        <span class="copyright">&copy; <span id="footerDate"></span> Lewis Donovan</span>
+        
+        
+      </div><!-- .site-info -->
+      
+      <div class="social-links">
+        
+          
+          
+<a href="https://github.com/lewisdonovan/"
+   target="_blank"
+   rel="noopener "
+  class="button-icon">
+  
+  <span class="icon fab fa-github" aria-hidden="true"></span><span class="screen-reader-text">GitHub</span>
+  
+</a>
+        
+          
+          
+<a href="https://lewisdonovan.medium.com/"
+   target="_blank"
+   rel="noopener "
+  class="button-icon">
+  
+  <span class="icon fab fa-medium" aria-hidden="true"></span><span class="screen-reader-text">Medium</span>
+  
+</a>
+        
+          
+          
+<a href="https://linkedin.com/in/lewisdonovan"
+   target="_blank"
+   rel="noopener "
+  class="button-icon">
+  
+  <span class="icon fab fa-linkedin" aria-hidden="true"></span><span class="screen-reader-text">LinkedIn</span>
+  
+</a>
+        
+          
+          
+<a href="https://stackoverflow.com/users/7546845/lewis-donovan"
+   target="_blank"
+   rel="noopener "
+  class="button-icon">
+  
+  <span class="icon fab fa-stack-overflow" aria-hidden="true"></span><span class="screen-reader-text">Stack Overflow</span>
+  
+</a>
+        
+          
+          
+<a href="https://instagram.com/lewisjdonovan"
+   target="_blank"
+   rel="noopener "
+  class="button-icon">
+  
+  <span class="icon fab fa-instagram" aria-hidden="true"></span><span class="screen-reader-text">Instagram</span>
+  
+</a>
+        
+      </div><!-- .social-links -->
+      
+    </div><!-- .site-footer-inside -->
+  </div><!-- .inner -->
+</footer><!-- .site-footer -->
+</div><!-- .site -->
+
+        <!-- Scripts -->
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/main.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', ' UA-125581166-3', 'auto');
+    ga('send', 'pageview');
+</script>
+    </body> 
+</html>
