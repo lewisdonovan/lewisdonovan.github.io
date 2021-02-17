@@ -41,6 +41,17 @@ sections:
       - title: Public speaking
         content: |-
           Looking for a guest speaker at your next tech conference? Need someone to educate your staff about technology? Want a host for your next tech meetup? I have broad experience speaking and presenting a wide variety of topics, especially in the tech and entertainment sectors. Drop me a line, let's talk.
+  - section_id: latest-posts
+    type: section_posts
+    title: Blog
+    subtitle: >-
+      Procrastinating by writing about work is apparently a thing.
+    posts_number: 2
+    col_number: two
+    actions:
+    - label: See all blog posts
+      url: https://lewisdonovan.medium.com
+      style: button
   - section_id: latest-press
     type: section_press
     title: Press
