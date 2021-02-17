@@ -19,7 +19,7 @@
         <article class="post grid-item">
           <div class="post-inside">
             {% if post.params.thumb_image %}
-            <a class="post-thumbnail" href="{{ post.url | relative_url }}">
+            <a class="post-thumbnail" href="{{ post.link }}">
               <img src="{{ post.params.thumb_image | relative_url }}" alt="{{ post.params.thumb_image_alt }}" />
             </a>
             {% endif %}
