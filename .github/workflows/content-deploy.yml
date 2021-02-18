@@ -29,4 +29,4 @@ jobs:
 
       - name: Remove nojekyll file
         run: |
-          rm ./.nojekyll
+          rm ./public/.nojekyll
