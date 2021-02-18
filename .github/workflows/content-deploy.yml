@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '12.x'
 
-      - name: 404 fix
+      - name: Move 404 file
         run: |
           cp ./public/404/index.html ./public/404.html
 
@@ -26,3 +26,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           cname: lewisdonovan.dev
+
+      - name: Remove nojekyll file
+        run: |
+          rm ./.nojekyll
