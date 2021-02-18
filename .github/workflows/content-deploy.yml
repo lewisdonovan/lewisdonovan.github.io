@@ -26,3 +26,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           cname: lewisdonovan.dev
+
+      - name: Remove File
+        uses: JesseTG/rm@v1.0.2
+        with:
+          path: /.nojekyll
