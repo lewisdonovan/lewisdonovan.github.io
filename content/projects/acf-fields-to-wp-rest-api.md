@@ -14,4 +14,4 @@ layout: project
 
 As part of a larger work project, I needed to expose data from ACF fields the the Wordpress REST API, so I built this plugin that does this programmatically. It's _'set and forget'_, meaning once it's installed all existing fields and data will be exposed to the API, and any new fields and data will appear without any further setup.
 
-The whole plugin is super lightweight, just 43 lines of PHP, coming in at just 4KB (zipped).
+The whole plugin is super lightweight, just 43 lines of PHP, coming in at just 4KB (zipped)..
