@@ -7,6 +7,8 @@ thumb_image: images/projects/amo-in-colour.jpg
 thumb_image_alt: Amo In Colour website
 image: images/projects/amo-in-colour.jpg
 image_alt: Amo In Colour website
+badge: images/badges/clios.gif
+badge_link: https://clios.com/music/winner/digital-mobile/bring-me-the-horizon/bring-me-the-horizon-s-data-driven-personalised-me-82857
 link: https://amoincolour.com/
 link_icon: fa-globe
 layout: project
@@ -27,6 +29,7 @@ Meanwhile, I worked closely with Lucy Ball (Director of Analytics, Sony Music UK
 The back-end processing was written in NodeJS, deployed as a serverless function in the cloud, and exposed to a REST API. This ensured we could appoint a first-class digital agency to build out the user experience, while keeping the business logic in-house.
 
 ### Results
+* **Winner: [Clio Awards](https://clios.com/music/winner/digital-mobile/bring-me-the-horizon/bring-me-the-horizon-s-data-driven-personalised-me-82857), e-commerce category**
 * **25k unique Spotify logins**
 * **63.8% conversion rate**
 * **60.6% user return rate**
