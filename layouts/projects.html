@@ -26,7 +26,7 @@
         </header>
       </a>
       {% if post.params.badge %}
-      <div class="badge {{ post.params.badge_position }}">
+      <div class="badge {{ post.params.badge_position }} {{ post.params.badge_class }}">
         {% if post.params.badge_link %}
         <a href="{{ post.params.badge_link }}" target="_blank" rel="noopener">
         {% endif %}

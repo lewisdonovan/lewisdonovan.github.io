@@ -34,6 +34,12 @@
         top: 5%;
       }
     }
+    &.animate {
+      &._wipe {
+        animation: slideInLeft 3s ease-in-out;
+        animation-iteration-count: infinite; 
+      }
+    }
     &.can-click {
       pointer-events: none;
     }

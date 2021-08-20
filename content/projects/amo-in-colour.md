@@ -7,8 +7,10 @@ thumb_image: images/projects/amo-in-colour.jpg
 thumb_image_alt: Amo In Colour website
 image: images/projects/amo-in-colour.jpg
 image_alt: Amo In Colour website
-badge: images/badges/clios.gif
+badge: images/badges/clios.png
 badge_link: https://clios.com/music/winner/digital-mobile/bring-me-the-horizon/bring-me-the-horizon-s-data-driven-personalised-me-82857
+badge_position: bottom-left
+badge_class: animate _wipe
 link: https://amoincolour.com/
 link_icon: fa-globe
 layout: project
