@@ -44,10 +44,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@stackbit/unibit@~0.1.11":
-  version "0.1.31"
-  resolved "https://registry.yarnpkg.com/@stackbit/unibit/-/unibit-0.1.31.tgz#d1df0b1cc912b1cd6c73d39b194eaa1794d76720"
-  integrity sha512-wUIMhG0SFQr8rgZ3mGZaNAHK4qkhIJTV6HYjsaGNBQgz2RWpAUo9LmXODZ5s8Y8M4yAdHluUDbESOub2X9f/tw==
+"@stackbit/unibit@^0.1.32":
+  version "0.1.32"
+  resolved "https://registry.yarnpkg.com/@stackbit/unibit/-/unibit-0.1.32.tgz#51e0736241a703b8499b2586dcc5956b1a65e220"
+  integrity sha512-KvGKESfq0f6m5CfVKGSLiQRqC7vJSLLaWmmBhw/fp7k8C71poYio21bPi8Uavd0384b0oEQ21zFeh4k9oiLwyQ==
   dependencies:
     "@hapi/joi" "^15.1.1"
     "@iarna/toml" "^2.2.5"
@@ -1900,10 +1900,15 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
-lodash@^4.0.0, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@~4.17.10:
+lodash@^4.0.0, lodash@^4.17.15, lodash@^4.17.20, lodash@~4.17.10:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
+
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 log-symbols@^2.2.0:
   version "2.2.0"
@@ -3410,9 +3415,9 @@ write-file-atomic@^2.0.0:
     signal-exit "^3.0.2"
 
 ws@^7.4.1:
-  version "7.4.2"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.2.tgz#782100048e54eb36fe9843363ab1c68672b261dd"
-  integrity sha512-T4tewALS3+qsrpGI/8dqNMLIVdq/g/85U98HPMa6F0m6xTbvhXU6RCQLqPH3+SlomNV/LdY6RXEbBpMH6EOJnA==
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.3.tgz#160835b63c7d97bfab418fc1b8a9fced2ac01a74"
+  integrity sha512-kQ/dHIzuLrS6Je9+uv81ueZomEwH0qVYstcAQ4/Z93K8zeko9gtAbttJWzoC5ukqXY1PpoouV3+VSOqEAFt5wg==
 
 xdg-basedir@^3.0.0:
   version "3.0.0"
