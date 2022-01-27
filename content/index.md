@@ -7,7 +7,7 @@ sections:
     type: section_hero
     title: Hi, I'm Lewis Donovan.
     content: |-
-      I'm a web developer based in London.
+      I'm a tech consultant based in London.
     actions:
       - label: More about me
         url: /about
