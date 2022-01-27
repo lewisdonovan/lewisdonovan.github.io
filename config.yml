@@ -4,7 +4,7 @@ page_load_js: "assets/js/main.js"
 params:
   baseurl: "https://lewisdonovan.dev/"
   google_analytics: "UA-125581166-3"
-  description: Webby Award nominated software engineer from London, creating awesome things for the web!
+  description: Award-winning tech entrepreneur from London, creating awesome products and experiences for the digital age!
   color_scheme: dark
   favicon: "images/favicon.png"
   accent_color: green
@@ -53,6 +53,11 @@ params:
         url: https://linkedin.com/in/lewisdonovan
         style: icon
         icon_class: fa-linkedin
+        new_window: true
+      - label: Twitter
+        url: https://twitter.com/LewisSonx
+        style: icon
+        icon_class: fa-twitter
         new_window: true
       - label: Stack Overflow
         url: https://stackoverflow.com/users/7546845/lewis-donovan
