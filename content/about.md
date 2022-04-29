@@ -6,7 +6,7 @@ image_alt: Black and white photo of a man smiling
 layout: page
 ---
 
-I’m a web developer based in London, UK, creating awesome stuff in the digital space. I have 10 years' professional experience as a full-stack web developer, and a total 17 years' of professional experience across various industries, including tech, music, events and media. In that time, I've been fortunate enough for my work to have been nominated for two Webby Awards, and a Clio Award, winning one of each.
+I’m a web developer based in London, UK, creating awesome stuff in the digital space. I have 11 years' professional experience as a full-stack web developer, and a total 17 years' of professional experience across various industries, including tech, music, events and media. In that time, I've been fortunate enough for my work to have been nominated for two Webby Awards, and a Clio Award, winning one of each.
 
 ### Work
 For my day-job I'm CTO and Co-Founder at [SonX](https://sonx.app), and formerly the Lead Web Developer at [Sony Music UK](https://sonymusic.co.uk).
