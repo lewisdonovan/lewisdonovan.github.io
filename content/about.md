@@ -8,9 +8,6 @@ layout: page
 
 I’m a web developer based in London, UK, creating awesome stuff in the digital space. I have 11 years' professional experience as a full-stack web developer, and a total 17 years' of professional experience across various industries, including tech, music, events and media. In that time, I've been fortunate enough for my work to have been nominated for two Webby Awards, and a Clio Award, winning one of each.
 
-### Work
-For my day-job I'm CTO and Co-Founder at [SonX](https://sonx.app), a new platform that puts powerful Web3 and community tools in the hands of musicians, redefining their relationship with their fans and rewarding them in the process. My previousl role was Lead Web Developer at [Sony Music UK](https://sonymusic.co.uk).
-
 ### Philosophy
 My approach to technology is firmly rooted in the needs of the end-user. I believe that any solution should be so intuitive and seamless that it feels like a natural extension of the user.
 
