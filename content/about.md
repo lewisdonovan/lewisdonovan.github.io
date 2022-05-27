@@ -15,13 +15,3 @@ For this reason, I traverse multiple languages, stacks and frameworks, on both t
 
 >Only when technology is invisible, is it of any use.  
 *- Jonathan Barnbrook*
-
-### Get in touch
-I am available for tech consulting, public speaking, mentoring and education. Looking for help with your next project, or a panellist at your next event? Want to learn about technology or how to break into the industry?  
-
-The best way to contact me is via [LinkedIn](https://linkedin.com/in/lewisdonovan).
-
-### Outside of work
-When I'm not coding, I enjoy playing football, cooking, travelling and going to concerts. Get me on [Instagram](https://instagram.com/lewisjdonovan) for all that good stuff.  
-
-Also feel free to give me a follow on [Medium](https://lewisdonovan.medium.com/), where I blog about coding from time to time.
