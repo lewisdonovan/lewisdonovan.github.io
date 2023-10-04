@@ -4,12 +4,12 @@
   "description": "Personal portfolio website",
   "main": "public/index.html",
   "scripts": {
-    "build": "npx unibit build",
+    "build": "unibit build",
     "develop": "npx stackbit dev --port 8080",
     "start": "npx unibit develop",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npx serve ./public",
-    "deploy-content": "npx unibit build && git subtree push --prefix public origin gh-pages"
+    "deploy-content": "unibit build && git subtree push --prefix public origin gh-pages"
   },
   "author": "Lewis Donovan",
   "license": "ISC",
