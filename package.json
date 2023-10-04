@@ -5,11 +5,10 @@
   "main": "public/index.html",
   "scripts": {
     "build": "unibit build",
-    "develop": "npx stackbit dev --port 8080",
-    "start": "npx unibit develop",
+    "develop": "unibit develop",
+    "start": "npm run develop",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "npx serve ./public",
-    "deploy-content": "unibit build && git subtree push --prefix public origin gh-pages"
+    "serve": "npx serve ./public"
   },
   "author": "Lewis Donovan",
   "license": "ISC",
