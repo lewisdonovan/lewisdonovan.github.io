@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '18.x'
+          node-version: '20.x'
 
       - name: Move 404 file
         run: |
@@ -28,6 +28,6 @@ jobs:
           cname: lewisdonovan.dev
 
       - name: Remove File
-        uses: JesseTG/rm@v1.0.3
+        uses: lewisdonovan/rm
         with:
           path: /.nojekyll
