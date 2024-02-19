@@ -29,9 +29,9 @@ sections:
     col_number: two
     is_numbered: true
     grid_items:
-      - title: Web development
+      - title: Software engineering
         content: |-
-          I have 10 years' professional experience as a full-stack web developer, with several years experience working across both conventional and modern web technologies and techniques, including JavaScript (ES6+), Sass, NodeJS, React, Angular, Git, Docker, CI/CD, PHP, MySQL, NoSQL, GraphQL and many more.
+          I have 10 years' professional experience as a full-stack software engineer, with several years experience working across both conventional and modern web technologies and techniques, including TypeScript, JavaScript, NodeJS, React (Native), Git, Docker, MySQL, NoSQL, Postgres, MongoDB, GraphQL and many more.
       - title: Systems architecture
         content: |-
           I have many years' experience with defining and architecting solutions that fit the most complex of business and user requirements. I'm fluent in all modern cloud, local and server environments, and am able to quickly match the available technologies to best fit the needs of a given project.
