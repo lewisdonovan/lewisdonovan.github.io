@@ -30,6 +30,6 @@ jobs:
           cname: lewisdonovan.dev
 
       - name: Remove File
-        uses: lewisdonovan/rm
+        uses: JesseTG/rm@v1.0.3
         with:
           path: /.nojekyll
