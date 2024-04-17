@@ -6,9 +6,9 @@ image_alt: Lewis Donovan headshot
 layout: page
 ---
 
-I’m a web developer based in London, UK, creating awesome stuff in the digital space. I have 11 years' professional experience as a full-stack web developer, and a total 17 years' of professional experience across various industries, including tech, music, events and media. In that time, I've been fortunate enough for my work to have been nominated for two Webby Awards, and a Clio Award, winning one of each.
+I’m a tech consultant, based in Mallorca, Spain, creating awesome stuff in the digital space. I have a combined 13 years' professional experience as a consultant, software engineer and solutions architect. In total, I have 17 years' of professional experience across various industries, including tech, music, events and media. In that time, I've been fortunate enough for my work to have been nominated for two Webby Awards, and a Clio Award, winning one of each.
 
-I was formerly the Lead Web Developer at [Sony Music UK](https://sonymusic.co.uk), and am currently CTO and Co-founder of [SonX](https://sonx.com/), as well as providing consulting and development services on a freelance basis via my business [Yeah Yeah London](https://yeahyeah.london).
+I was formerly the Lead Web Developer at [Sony Music UK](https://sonymusic.co.uk), and CTO and Co-founder of [SonX](https://sonx.com/). I currently provide consulting and development services on a freelance basis via my business [Yeah Yeah London](https://yeahyeah.london).
 
 ### Philosophy
 My approach to technology is firmly rooted in the needs of the end-user. I believe that any solution should be so intuitive and seamless that it feels like a natural extension of the user.

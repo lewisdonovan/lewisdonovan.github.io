@@ -41,10 +41,10 @@ if (menuToggle) {
         loop: true,
         strings: [
           'a tech consultant',
-          'an entrepreneur',
-          'a public speaker',
           'a software engineer',
-          'a product manager',
+          'a technical leader',
+          'a solutions architect',
+          'a CTO',
         ],
         autoStart: true,
         //cursor: ''

@@ -31,16 +31,18 @@ sections:
     grid_items:
       - title: Software engineering
         content: |-
-          I have 10 years' professional experience as a full-stack software engineer, with several years experience working across both conventional and modern web technologies and techniques, including TypeScript, JavaScript, NodeJS, React (Native), Git, Docker, MySQL, NoSQL, Postgres, MongoDB, GraphQL and many more.
-      - title: Systems architecture
+          I have 13 years' professional experience as a full-stack software engineer, with several years experience working across both conventional and modern web technologies and techniques, including TypeScript, JavaScript, NodeJS, React (Native), Git, Docker, MongoDB, SQL, GraphQL, REST APIs and many more.
+      - title: Solutions architecture
         content: |-
           I have many years' experience with defining and architecting solutions that fit the most complex of business and user requirements. I'm fluent in all modern cloud, local and server environments, and am able to quickly match the available technologies to best fit the needs of a given project.
       - title: Tech consulting
         content: |-
           Got a great idea but don't know how to bring it to life? Not sure what kinds of skills you need to hire in order to realise your vision? Need help figuring out if your concept is technologically viable? I can guide you through the often inscrutable process of getting your product from paper to post-launch.
-      - title: Public speaking
+      - title: Technical leadership
+        # content: |-
+        #   Looking for a guest speaker at your next tech conference? Need someone to educate your staff about technology? Want a host for your next tech meetup? I have broad experience speaking and presenting a wide variety of topics, especially in the tech and entertainment sectors. Drop me a line, let's talk.
         content: |-
-          Looking for a guest speaker at your next tech conference? Need someone to educate your staff about technology? Want a host for your next tech meetup? I have broad experience speaking and presenting a wide variety of topics, especially in the tech and entertainment sectors. Drop me a line, let's talk.
+          As an experienced CTO, Engineering Manager and Principal Engineer, I'm perfectly placed to build teams, run sprints, handle code reviews, mentor programmers and identify future leaders. If you need battle-hardened technical leader to galvanise your team, drop me a line and let's talk!
   - section_id: latest-posts
     type: section_posts
     title: Blog

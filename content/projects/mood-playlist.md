@@ -28,4 +28,10 @@ The next step was to capture their taste profile. My first thought was to have t
 The user's taste profile is then cross-referenced with other datasets to make further taste inferences, and to build several pools of potential tracks based on the user's taste profile. I then wrote a suitability algorithm that filters the tracks and removes any unsuitable tracks based on the user's self-selected mood. Each track pool has a different level of confidence (based on the amount of inferences required in order to generate it), so the suitability algorithm is tweaked in real-time to reflect this. The tracks that successfully pass through the filter are then ranked in order of suitability, and only the best matches actually end up on the playlist, which is then saved into the user's Spotify account.
 
 ### Results
-This product is still in beta. Results coming soon.
+As MOOD Playlist was not artist-led, it was difficult for Sony Music to allocate marketing budget to it, so I decided to focus on organic SEO. At that time, playlist generators were a relatively novel concept, so we made some good headway by creating landing pages that targeted specific trends or concepts (such as ["lo-fi hip-hop"](https://www.moodplayl.ist/create-personalised-lo-fi-hip-hop-playlist-spotify/) or ["lockdown playlist"](https://www.moodplayl.ist/personalised-isolation-playlist-generator-spotify/)). 
+
+While this approach took a while to yield any results, it was worth the wait. In the first 3 months, only 1,600 playlists were made through the tool. **In the next 3 months, 31,000 playlists were made, all from organic traffic!**
+
+The trend continued, as a further 36,000 were made in the next 3 months, with over 60% of these coming from returning users.
+
+After that, I left Sony [to start SonX]("/projects/sonx"), so unfortunately I don't have access to any further stats.
