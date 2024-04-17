@@ -34,7 +34,7 @@ if (menuToggle) {
   subtitles.forEach(subtitle => {
     if (subtitle.innerText == "I'm a tech consultant based in London.") {
       subtitle.innerHTML = `
-        I'm <span id="typewriterTarget"></span> based in London.
+        I'm <span id="typewriterTarget"></span>based in London.
       `
       const target = document.getElementById('typewriterTarget')
       const typewriter = new Typewriter(target, {
