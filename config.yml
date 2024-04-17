@@ -32,7 +32,7 @@ params:
         style: link
         new_window: true
       - label: Contact
-        url: /about/#get-in-touch
+        url: /contact
         style: link
   footer:
     content: >-

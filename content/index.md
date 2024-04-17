@@ -6,6 +6,8 @@ sections:
   - section_id: hero
     type: section_hero
     title: Hi, I'm Lewis Donovan.
+    avatar: /images/headshot.jpg
+    avatar_alt: Lewis Donovan headshot avatar
     content: |-
       I'm a tech consultant based in London.
     actions:

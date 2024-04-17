@@ -4,6 +4,11 @@
     {% if section.title %}
     <div class="block-header inner-sm">
       <h1 class="block-title">{{ section.title }}</h1>
+      {% if section.avatar %}
+      <div class="avatar">
+        <img src="{{ section.avatar }}" alt="{{ section.avatar_alt }}" />
+      </div>
+      {% endif %}
     </div>
     {% endif %}
     {% if section.content %}
