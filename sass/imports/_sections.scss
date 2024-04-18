@@ -14,17 +14,25 @@
   margin-bottom: 1.66667em;
 }
 
-.block-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2.5em;
-  .avatar {
-    width: 30%;
-    img {
-      border-radius: 50%;
-      width: 100%;
-      max-width: 150px;
+main {
+  section {
+    .block-header {
+      margin-bottom: 2.5em;
+      .avatar {
+        width: 30%;
+        img {
+          border-radius: 50%;
+          width: 100%;
+          max-width: 150px;
+        }
+      }
+    }
+    &:first-of-type {
+      .block-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
   }
 }
