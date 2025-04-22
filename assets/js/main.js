@@ -32,9 +32,9 @@ if (menuToggle) {
 (() => {
   const subtitles = document.querySelectorAll('.block-hero .block-content p')
   subtitles.forEach(subtitle => {
-    if (subtitle.innerText == "I'm a tech consultant based in London.") {
+    if (subtitle.innerText == "I'm a British tech consultant based in Mallorca.") {
       subtitle.innerHTML = `
-        I'm <span id="typewriterTarget"></span>based in London.
+        I'm <span id="typewriterTarget"></span>based in Mallorca.
       `
       const target = document.getElementById('typewriterTarget')
       const typewriter = new Typewriter(target, {

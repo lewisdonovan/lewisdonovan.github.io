@@ -3,7 +3,7 @@
     <head>    
         
         
-        <title>About Me - Lewis Donovan</title>
+        <title>MOOD Playlist - Lewis Donovan</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="google" content="notranslate" />
@@ -23,7 +23,7 @@
 
 
 
-<meta property="og:description" content="Hiya, I&#39;m Lewis Donovan" />
+<meta property="og:description" content="Playlist generator tailored to both your mood and taste" />
 
         
     </head>
@@ -93,7 +93,7 @@
             
               
               
-              <li class="menu-item current-menu-item">
+              <li class="menu-item">
                 
                 
 <a href="/about/"
@@ -164,34 +164,91 @@
 
 <div class="inner outer">
 
-  <article class="post post-full">
-    <header class="post-header inner-sm">
-      <h1 class="post-title line-top">About Me</h1>
+    <article class="post post-full">
+        <header class="post-header inner-sm">
+          <h1 class="post-title line-top">Mat Plus</h1>
       
-      <div class="post-subtitle">
-        Hiya, I'm Lewis Donovan
-      </div>
+          <div class="post-subtitle">
+            A consumer rewards app, giving cashback for purchases in Swedish supermarkets
+          </div>
       
-    </header>
-    
-    <div class="post-image">
-      <img src="/images/about/headshot.jpg" alt="Lewis Donovan headshot" />
-    </div>
-    
-    <div class="post-content inner-sm">
-      <p>I’m a tech consultant, based in Mallorca, Mallorca, creating awesome stuff in the digital space. I have a combined 13 years&#39; professional experience as a consultant, software engineer and solutions architect. In total, I have 17 years&#39; of professional experience across various industries, including tech, music, events and media. In that time, I&#39;ve been fortunate enough for my work to have been nominated for two Webby Awards, and a Clio Award, winning one of each.</p>
-<p>I was formerly the Lead Web Developer at <a href="https://sonymusic.co.uk">Sony Music UK</a>, and CTO and Co-founder of <a href="https://sonx.com/">SonX</a>. I currently provide consulting and development services on a freelance basis via my business <a href="https://yeahyeah.london">Yeah Yeah London</a>.</p>
-<h3 id="philosophy">Philosophy</h3>
-<p>My approach to technology is firmly rooted in the needs of the end-user. I believe that any solution should be so intuitive and seamless that it feels like a natural extension of the user.</p>
-<p>For this reason, I traverse multiple languages, stacks and frameworks, on both the front and back-end, opting for what is best suited to a given problem, as opposed to what is most expedient. I pride myself on the ability to identify and understand a problem, and having the knowledge and resources to deliver a pragmatic and holistic solution.</p>
-<blockquote>
-<p>Only when technology is invisible, is it of any use.<br><em>- Jonathan Barnbrook</em></p>
-</blockquote>
-<h3 id="get-in-touch">Get in touch</h3>
-<p>It&#39;s always great to make new connections, please feel free to reach out via <a href="https://linkedin.com/in/lewisdonovan">LinkedIn</a> for anything professional, or <a href="https://instagram.com/lewisjdonovan">Instagram</a> for anything personal. </p>
+          <a href="https://matplus.se/" class="button" style="margin:1em auto 0;" target="_blank">
+            <span class="icon">
+              <span class="fa fa-globe"></span>
+            </span>
+            View project
+          </a>
+        </header>
+      
+        <div class="post-image">
+          <img src="/images/projects/matplus.jpg" alt="Mat Plus - Swedish consumer rewards app" />
+        </div>
+      
+        <div class="post-content inner-sm">
+          <h3 id="brief">Brief</h3>
+          <p>I was approached by the team at Mat Plus, a Swedish consumer rewards startup, to build their consumer-facing mobile app. The brief was to create an app that enabled users to connect their various supermarket loyalty accounts, import their receipts, earn cashback rewards for certain purchases, and pay that money out to their bank account.</p>
+      
+          <h3 id="solution">Solution</h3>
+          <p><a href="https://apps.apple.com/se/app/mat-plus/id6504274755">Mat Plus</a> launched in the AppStore in November 2024, and enables users to automatically pull their receipts from ICA, Coop, Willys, and Lidl, with more stores on the way.</p>
+      
+          <p>Using a combination of headless browsing, PDF parsing and GTIN-based product mapping, we turn messy receipt data into structured records, down to each individual line item.</p>
+      
+          <p>Every week, we load new cashback offers into the app. If you buy a product that matches an active offer — and we can verify the purchase via your connected receipt stream — you earn cashback. That’s it. No hoops to jump through, no scanning barcodes at the till.</p>
+      
+          <p>We support logins via BankID and OIDC, and users can link their Swish account to withdraw their cashback balance to their bank account instantly.</p>
+      
+          <h3 id="tech">Tech</h3>
+          <p>Mat Plus is built on a modern stack:</p>
+          <ul>
+            <li>React Native (Expo) for the iOS app</li>
+            <li>Supabase for auth, database and storage</li>
+            <li>Ts.ED running in EC2 for our API layer</li>
+            <li>Lambdas + SQS to process uploaded receipts using OCR, computer vision, and rule-based filtering</li>
+            <li>Swish API for payouts</li>
+            <li>Supabase Realtime + Legend State for UI sync and offer updates</li>
+          </ul>
+      
+          <p>Everything is stitched together to feel seamless for the user — connect your stores, go shopping like usual, and get money back if you bought something that happened to be on offer.</p>
+      
+          <h3 id="results">Results</h3>
+          <p>It's still early days, but the response has been promising. In the five months since launch, the app has attracted thousands of users, hundres of thousands of receipts, and millions of data points. Mat Plus was also accepted into the <a href="https://www.hhs.se/en/outreach/sse-initiatives/sse-business-lab">SSE Business Lab</a> incubator program.</p>
+        </div>
+      </article>
 
+  <div class="press-articles">
+    
+
+    
+    <h3 class="press-title">Press coverage</h3>
+    <div class="post-feed grid grid-col-3">
+    
+
+      
+      <article class="post grid-item">
+        <div class="post-inside">
+          <a class="post-thumbnail" href="https://musically.com/2021/03/25/sony-musics-4th-floor-creative-debuts-mood-playlist-creator/" target="_blank" rel="noopener">
+            <img src="/images/press/musically.jpg" alt="MusicAlly logo" />
+          </a>
+          <header class="post-header">
+            <h3 class="post-title">
+              <a href="https://musically.com/2021/03/25/sony-musics-4th-floor-creative-debuts-mood-playlist-creator/" target="_blank" rel="noopener">
+                Sony Music’s 4th Floor Creative debuts Mood Playlist creator
+              </a>
+            </h3>
+            <div class="post-meta">
+              <time class="published"
+                datetime="2021-03-25 01:00">March 25, 2021</time>
+            </div>
+          </header>
+        </div>
+      </article>
+      
+
+    
     </div>
-  </article><!-- .post -->
+    
+
+  </div>
 
 </div><!-- .inner -->
 
