@@ -12,6 +12,19 @@ link_icon: fa-github
 layout: project
 ---
 
+---
+## Enterprise-Grade Google News API (sponsored)
+
+<p align="">
+  <a href="https://hasdata.com/apis/google-news-api" target="_blank" rel="noopener nofollow">
+    <img width="266" height="100" alt="HasData logo" src="https://github.com/user-attachments/assets/10151d36-86ae-4867-a287-fcf67bb2663e" />
+  </a>
+</p>
+
+[HasData's Google News API](https://hasdata.com/apis/google-news-api) returns structured data in 1.75 seconds. No proxies, CAPTCHAs, or headless browsers to maintain. Start with 1,000 free API calls.
+
+---
+
 When Google announced they were deprecating their News API, I decided it would be fun to see if it could be partially replicated with a Node web-scraper. This project is the result. *Google News Scraper* uses headless Chrome (running in Puppeteer) to open a browser session with Google News, scrape the article data from the DOM, and return it as a JSON array.
 
 When invoking the search, the user can pass a config object, giving them granular control over the search term, timeframe, URL structure, and even the arguments passed to Puppeteer.
