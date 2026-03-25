@@ -1,0 +1,16 @@
+---
+alwaysApply: true
+---
+# Overview
+
+This is a website for Lewis Donovan, a freelance software engineer and architect.
+We have the content and routes already, I don't think that needs to change.
+
+## Tooling
+
+I want it to use a mix of shadn/ui and stuff from ReactBits. You have an MCP server connection to shadcn/ui so you can browse components.
+Other than that, we'll be using Next.js, deployed to Vercel. No auth, no database. COntent will come from our file routes.
+
+## Styling
+
+Let's make the site more beautiful. We don't need to respect the current design. Let's make this really new, modern, fun to use, attractive, it needs to project the image of an expert software engineer and solutions architect, but with an eye for design and UX. Choose a colour scheme, make it work in both light and dark modes - and implement both. For the love of god, don't do the classic "AI purple" thing.

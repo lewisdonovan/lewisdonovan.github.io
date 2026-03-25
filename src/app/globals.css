@@ -1,0 +1,282 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Lewis Donovan Portfolio Theme */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-fira-code);
+  
+  /* Custom colors */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  /* Typography */
+  --font-inter: 'Inter', sans-serif;
+  --font-fira-code: 'Fira Code', monospace;
+  
+  /* Spacing and layout */
+  --radius: 0.5rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+:root {
+  /* Light Mode - Soft cream base with deep emerald accents */
+  --background: #fefdf8;
+  --foreground: #1e293b;
+  --card: #ffffff;
+  --card-foreground: #1e293b;
+  --popover: #ffffff;
+  --popover-foreground: #1e293b;
+  --primary: #047857;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #1e293b;
+  --muted: #f8fafc;
+  --muted-foreground: #64748b;
+  --accent: #10b981;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --border: #e2e8f0;
+  --input: #f1f5f9;
+  --ring: #10b981;
+}
+
+.dark {
+  /* Dark Mode - Warm charcoal base with emerald accents */
+  --background: #1a1a1a;
+  --foreground: #f5f5f5;
+  --card: #262626;
+  --card-foreground: #f5f5f5;
+  --popover: #262626;
+  --popover-foreground: #f5f5f5;
+  --primary: #10b981;
+  --primary-foreground: #1a1a1a;
+  --secondary: #2a2a2a;
+  --secondary-foreground: #f5f5f5;
+  --muted: #404040;
+  --muted-foreground: #a3a3a3;
+  --accent: #10b981;
+  --accent-foreground: #1a1a1a;
+  --destructive: #ef4444;
+  --border: #404040;
+  --input: #262626;
+  --ring: #10b981;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    @apply transition-colors duration-300;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-foreground font-semibold;
+    letter-spacing: -0.02em;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent rounded-md;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent/80;
+  }
+  
+  /* Selection styling */
+  ::selection {
+    @apply bg-accent text-accent-foreground;
+  }
+  
+  ::-moz-selection {
+    @apply bg-accent text-accent-foreground;
+  }
+}
+
+@layer components {
+  /* Typography styles */
+  .heading-xl {
+    @apply text-5xl md:text-6xl font-bold leading-tight text-foreground tracking-tight;
+  }
+  
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-bold leading-tight text-foreground tracking-tight;
+  }
+  
+  .heading-md {
+    @apply text-2xl md:text-3xl font-semibold leading-tight text-foreground tracking-tight;
+  }
+  
+  .heading-sm {
+    @apply text-xl md:text-2xl font-semibold leading-tight text-foreground tracking-tight;
+  }
+  
+  .text-muted {
+    @apply text-muted-foreground;
+  }
+  
+  /* Section decorations */
+  .line-top {
+    @apply relative;
+  }
+  
+  .line-top::before {
+    content: '';
+    @apply block h-1 mb-6 w-16;
+    background: linear-gradient(90deg, rgb(16, 185, 129), rgba(16, 185, 129, 0.5));
+  }
+  
+  /* Grid layouts */
+  .grid-portfolio {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+  
+  .grid-services {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8;
+  }
+  
+  /* Project card styles */
+  .project-card {
+    @apply relative overflow-hidden rounded-lg border border-border bg-card transition-all duration-300 hover:shadow-lg hover:shadow-accent/10 hover:-translate-y-1;
+  }
+  
+  .project-thumbnail {
+    @apply relative w-full overflow-hidden;
+    aspect-ratio: 16/10;
+  }
+  
+  .project-thumbnail img {
+    @apply absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out;
+  }
+  
+  .project-card:hover .project-thumbnail img {
+    @apply scale-110;
+  }
+  
+  /* Badge styles */
+  .badge {
+    @apply absolute top-4 right-4 w-20 h-20 z-10 transition-transform duration-300;
+  }
+  
+  .badge.bottom-left {
+    @apply top-auto right-auto bottom-4 left-4;
+  }
+  
+  .badge.bottom-right {
+    @apply top-auto left-auto bottom-4 right-4;
+  }
+  
+  .project-card:hover .badge {
+    @apply scale-110;
+  }
+  
+  /* Avatar styles */
+  .avatar {
+    @apply w-32 h-32 md:w-40 md:h-40 flex-shrink-0 rounded-full overflow-hidden border-4 border-accent/20;
+  }
+  
+  .avatar img {
+    @apply w-full h-full object-cover;
+  }
+  
+  /* Social links */
+  .social-link {
+    @apply text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110;
+  }
+  
+  /* Mobile menu styles */
+  .mobile-menu {
+    @apply fixed inset-y-0 right-0 w-full max-w-sm bg-card border-l border-border transform translate-x-full transition-transform duration-300 ease-in-out z-50 shadow-2xl;
+  }
+  
+  .mobile-menu.open {
+    @apply translate-x-0;
+  }
+  
+  .mobile-overlay {
+    @apply fixed inset-0 bg-background/80 backdrop-blur-sm opacity-0 transition-opacity duration-300 z-40;
+  }
+  
+  .mobile-overlay.open {
+    @apply opacity-100;
+  }
+  
+  /* Gradient backgrounds */
+  .gradient-hero {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(4, 120, 87, 0.05) 100%);
+  }
+  
+  .dark .gradient-hero {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);
+  }
+  
+  .gradient-card {
+    @apply bg-gradient-to-br from-card to-card/50;
+  }
+}
+
+@layer utilities {
+  /* Custom utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .container-custom {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-sm {
+    @apply mx-auto max-w-4xl px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Smooth transitions */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  /* Glass effect */
+  .glass {
+    @apply bg-background/80 backdrop-blur-md border border-border/50;
+  }
+}
