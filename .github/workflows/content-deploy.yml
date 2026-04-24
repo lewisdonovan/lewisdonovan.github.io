@@ -4,25 +4,37 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout
+        uses: actions/checkout@v5
 
       - name: Move 404 file
         run: |
           cp ./public/404/index.html ./public/404.html
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          cname: lewisdonovan.dev
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-      - name: Remove File
-        uses: JesseTG/rm@v1.0.3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
         with:
-          path: /.nojekyll
+          path: ./public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
