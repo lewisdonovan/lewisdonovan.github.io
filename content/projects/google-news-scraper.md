@@ -21,7 +21,7 @@ layout: project
   </a>
 </p>
 
-[HasData's Google News API](https://hasdata.com/apis/google-news-api) returns structured data in 1.75 seconds. No proxies, CAPTCHAs, or headless browsers to maintain. Start with 1,000 free API calls.
+[HasData's Google News API](https://hasdata.com/apis/google-news-api) returns structured data in 1.75 seconds. No proxies, CAPTCHAs, or headless browsers to maintain. Start with 1,000 free API calls. 
 
 ---
 
