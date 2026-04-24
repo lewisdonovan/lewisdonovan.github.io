@@ -17,7 +17,7 @@ layout: project
 
 <p align="">
   <a href="https://hasdata.com/apis/google-news-api" target="_blank" rel="noopener nofollow">
-    <img width="266" height="100" alt="HasData logo" src="static/images/projects/hasdata.png" />
+    <img width="266" height="100" alt="HasData logo" src="/images/projects/hasdata.png" />
   </a>
 </p>
 
