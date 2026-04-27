@@ -25,6 +25,18 @@ layout: project
 
 ---
 
+## SerpApi - The News Monitoring API (sponsored)
+
+<p align="">
+  <a href="https://serpapi.com/use-cases/news-monitoring?umt_source=lewisdonovan" target="_blank" rel="noopener nofollow">
+    <img width="266" height="100" alt="HasData logo" src="/images/projects/serpapi.png" />
+  </a>
+</p>
+
+[SerpApi - The News Monitoring API](https://serpapi.com/use-cases/news-monitoring?umt_source=lewisdonovan). We help you access real-time search engine data via a simple API, which includes news from Google, Bing, and DuckDuckGo.
+
+---
+
 When Google announced they were deprecating their News API, I decided it would be fun to see if it could be partially replicated with a Node web-scraper. This project is the result. *Google News Scraper* uses headless Chrome (running in Puppeteer) to open a browser session with Google News, scrape the article data from the DOM, and return it as a JSON array.
 
 When invoking the search, the user can pass a config object, giving them granular control over the search term, timeframe, URL structure, and even the arguments passed to Puppeteer.
