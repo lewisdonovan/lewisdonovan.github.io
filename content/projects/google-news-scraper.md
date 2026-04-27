@@ -28,7 +28,7 @@ layout: project
 ## SerpApi - The News Monitoring API (sponsored)
 
 <p align="">
-  <a href="https://serpapi.com/use-cases/news-monitoring?umt_source=lewisdonovan" target="_blank" rel="noopener nofollow">
+  <a href="https://serpapi.com/use-cases/news-monitoring?umt_source=lewisdonovan" target="_blank" rel="noopener nofollow" style="border:none;">
     <img height="100" alt="SerpAPI logo" src="/images/projects/serpapi.png" style="margin:0;" />
   </a>
 </p>
