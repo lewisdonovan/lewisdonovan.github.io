@@ -29,7 +29,7 @@ layout: project
 
 <p align="">
   <a href="https://serpapi.com/use-cases/news-monitoring?umt_source=lewisdonovan" target="_blank" rel="noopener nofollow">
-    <img width="266" height="100" alt="HasData logo" src="/images/projects/serpapi.png" />
+    <img width="266" height="100" alt="SerpAPI logo" src="/images/projects/serpapi.png" />
   </a>
 </p>
 
