@@ -33,7 +33,7 @@ layout: project
   </a>
 </p>
 
-[SerpApi - The News Monitoring API](https://serpapi.com/use-cases/news-monitoring?umt_source=lewisdonovan). We help you access real-time search engine data via a simple API, which includes news from Google, Bing, and DuckDuckGo.
+[SerpApi - The News Monitoring API](https://serpapi.com/use-cases/news-monitoring?umt_source=lewisdonovan). We help you access real-time search engine data via a simple API, which includes news from Google, Bing, and DuckDuckGo. 
 
 ---
 
